@@ -1,0 +1,63 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "D:\\Frontend\\dgprawo_react\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      {
+        "location": "D:\\Frontend\\dgprawo_react\\src\\pages"
+      }
+    ],
+    "D:\\Frontend\\dgprawo_react\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "D:\\Frontend\\dgprawo_react\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "D:\\Frontend\\dgprawo_react\\node_modules\\react-static-plugin-emotion\\node.api.js",
+    "D:\\Frontend\\dgprawo_react"
+  ],
+  "paths": {
+    "ROOT": "D:\\Frontend\\dgprawo_react",
+    "SRC": "D:\\Frontend\\dgprawo_react\\src",
+    "DIST": "D:\\Frontend\\dgprawo_react\\dist",
+    "ASSETS": "D:\\Frontend\\dgprawo_react\\dist",
+    "PLUGINS": "D:\\Frontend\\dgprawo_react\\plugins",
+    "TEMP": "D:\\Frontend\\dgprawo_react\\tmp",
+    "ARTIFACTS": "D:\\Frontend\\dgprawo_react\\artifacts",
+    "PUBLIC": "D:\\Frontend\\dgprawo_react\\public",
+    "NODE_MODULES": "D:\\Frontend\\dgprawo_react\\node_modules",
+    "EXCLUDE_MODULES": "D:\\Frontend\\dgprawo_react\\node_modules",
+    "PACKAGE": "D:\\Frontend\\dgprawo_react\\package.json",
+    "HTML_TEMPLATE": "D:\\Frontend\\dgprawo_react\\dist\\index.html",
+    "STATIC_DATA": "D:\\Frontend\\dgprawo_react\\dist\\staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
