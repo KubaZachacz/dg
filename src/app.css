@@ -5,9 +5,10 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -16,4 +17,8 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
 }

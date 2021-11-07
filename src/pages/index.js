@@ -4,10 +4,12 @@ import { Container } from '../components/ui';
 import HomeImage from '../components/HomeImage';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-import icon1 from '../assets/icon_1.svg';
-import icon2 from '../assets/icon_2.svg';
-import icon3 from '../assets/icon_3.svg';
+import Details from '../components/Details';
+import Offers from '../components/Offers';
+import Pricing from '../components/Pricing';
+import Team from './../components/Team';
+import Contact from './../components/Contact';
+import Navbar from '../components/Navbar'
 
 const Header = styled.header`
   position: relative;
@@ -23,25 +25,63 @@ const Header = styled.header`
     background: linear-gradient(135deg, rgba(13,69,121,1) 0%, rgba(11,45,77,1) 100%);
     z-index: -1;
     border-radius: 0 0 0 60px;
+
+    @media (max-width: 992px) {
+      top: 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    &:before {
+      content: none;
+    }
   }
 `;
 
-const Flex = styled.div`
+const MobileContent = styled.div`
+  display: none;
+
+  @media (max-width: 992px) {
+    display: block;
+  }
+`;
+
+const DesktopContent = styled.div`
   display: flex;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
 `;
 
 const Box = styled.div`
-  padding-top: 5%;
-  padding-left: 5%;
+padding-top: 5%;
+padding-left: 5%;
 
-  @media(max-width: 1410px) {
-    padding-left: unset;
-    padding-right: 5%;
-  }
+@media(max-width: 1410px) {
+  padding-left: unset;
+  padding-right: 5%;
+}
 
+@media(max-width: 1200px) {
+  padding-top: 4%;
+}
 `;
 
-const Title = styled.h1`
+const MobileTitleWrapper = styled.div`
+  background: rgb(13,69,121);
+  background: linear-gradient(135deg, rgba(13,69,121,1) 0%, rgba(11,45,77,1) 100%);
+  margin: 0 -24px;
+  padding: 32px;
+
+  margin-bottom: 35%;
+
+  @media (max-width: 640px) {
+    margin-bottom: 50%;
+  }
+`
+
+const PageTitle = styled.h1`
   font-family: 'Roboto Slab', serif;
   color: white;
   font-weight: 400;
@@ -54,75 +94,19 @@ const Title = styled.h1`
   @media(max-width: 1410px) {
     font-size: 32px;
   }
-`;
 
-const StyledImage = styled(HomeImage)`
-  position: relative;
-  width: 110%;
-  margin-left: -15%;
-  margin-bottom: -5%;
-
-  @media(max-width: 1410px) {
-    width: auto;
-    margin-left: -5%;
-    margin-right: 5%;
+  @media(max-width: 1200px) {
+    font-size: 28px;
   }
 
-  & #prefix__background {
-    position: relative;
-    animation-name: background;
-    animation-duration: 10s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  @media(max-width: 992px) {
+    font-size: 36px;
+    margin-bottom: 10%;
   }
 
-  & #prefix__leafs {
-    position: relative;
-    animation-name: leafs;
-    animation-duration: 7s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  @media(max-width: 640px) {
+    font-size: 28px;
   }
-
-  & #prefix__person_right,
-  & #prefix__person_left {
-    position: relative;
-    animation-name: people;
-    animation-duration: 6s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-
-  @keyframes background {
-    from {
-      transform: translateX(1%);
-    }
-    to {
-      transform: translateX(-3%);
-    }
-  }
-
-  @keyframes leafs {
-    from {
-      transform: translateX(-1%);
-    }
-    to {
-      transform: translateX(1%);
-    }
-  }
-
-  @keyframes people {
-    from {
-      transform: translateX(1%);
-    }
-    to {
-      transform: translateX(-1%);
-    }
-  }
-  
 `;
 
 const Button = styled.button`
@@ -141,54 +125,6 @@ const Button = styled.button`
   }
 `;
 
-const Details = styled.div`
-  margin-top: 140px;
-`;
-
-const StyledDetail = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 60px;
-  padding: 8px 0;
-  font-size: 18px;
-
-  p {
-    margin-left: 40px;
-  }
-  
-  @media (max-width: 1200px) {
-    margin-bottom: 20px;
-
-    img {
-      width: 64px;
-    }
-
-    p {
-      margin-left: 20px;
-    }
-  }
-`;
-
-const Detail = ({ icon, text }) => <StyledDetail data-aos="fade-in">
-  <img src={icon} alt="" />
-  <p>{text}</p>
-</StyledDetail>
-
-const details = [
-  {
-    icon: icon1,
-    text: 'Dbanie o interes naszych klientów i świadczenie na ich rzecz obsługi prawnej odpowiadającej ich potrzebom jest dla nas nadrzędną wartością nieustannie powodującą konieczność poszerzania posiadanych kompetencji.'
-  },
-  {
-    icon: icon2,
-    text: 'Dzięki interdyscyplinarności i współpracy z rzeczoznawcami majątkowymi, kancelariami adwokackimi, komorniczymi oraz notarialnymi zapewniamy kompleksową pomoc prawną i doradztwo uwzględniające w jak najwyższym stopniu złożone sytuacje i potrzeby naszych klientów.'
-  },
-  {
-    icon: icon3,
-    text: 'W wyniku indywidualnego podejścia do każdego problemu jesteśmy w stanie zagwarantować Państwu najwyższą jakość wykonywanych usług i proponować najlepiej dopasowane rozwiązania. Naszą Ofertę kierujemy zarówno do osób fizycznych, jak i małych i średnich przedsiębiorstw. Serdecznie zapraszamy do nawiązania współpracy.'
-  },
-]
-
 export default () => {
 
   useEffect(() => {
@@ -198,28 +134,42 @@ export default () => {
     });
   }, [])
 
+  const addHash = (hash) => {
+    if (typeof window !== 'undefined') {
+      window.location.hash = hash;
+    }
+  }
+
+
   return (
-    <main>
-      <Header>
+    <>
+      <Navbar />
+      <main>
+        <Header>
+          <Container>
+            <DesktopContent>
+              <HomeImage />
+              <Box>
+                <PageTitle>Kancelaria Radcy Prawnego <strong>Dawid Gawrysiak</strong></PageTitle>
+                <Button onClick={() => addHash('kancelaria')}>Dowiedz się więcej</Button>
+              </Box>
+            </DesktopContent>
+            <MobileContent>
+              <MobileTitleWrapper>
+                <PageTitle>Kancelaria Radcy Prawnego <strong>Dawid Gawrysiak</strong></PageTitle>
+                <HomeImage />
+              </MobileTitleWrapper>
+            </MobileContent>
+          </Container>
+        </Header>
         <Container>
-          <Flex>
-            <StyledImage />
-            <Box>
-              <Title>Kancelaria Radcy Prawnego <strong>Dawid Gawrysiak</strong></Title>
-              <Button>Dowiedz się więcej</Button>
-            </Box>
-          </Flex>
+          <Details />
         </Container>
-      </Header>
-      <Container>
-        <Details>
-          {details.map(({ icon, text }) => <Detail {...{ icon, text }} />)}
-        </Details>
-      </Container>
-      <div style={{
-        height: 500, background: 'linear-gradient(135deg, rgba(13, 69, 121, 1) 0%, rgba(11, 45, 77, 1) 100%)'
-      }}></div>
-      <div style={{ height: 1000 }}></div>
-    </main>
+        <Offers />
+        <Pricing />
+        <Team />
+        <Contact />
+      </main>
+    </>
   );
 }

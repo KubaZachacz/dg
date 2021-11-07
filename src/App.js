@@ -1,16 +1,15 @@
-import React from 'react'
-import { Root, Routes, addPrefetchExcludes, Head } from 'react-static'
-//
-import { Link, Router } from 'components/Router'
-import Dynamic from 'containers/Dynamic'
+import React, { useEffect } from 'react'
+import { Root, Routes, Head } from 'react-static'
+import { Router } from 'components/Router'
 
 import './app.css'
-import Navbar from './components/Navbar'
-
-// Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes(['dynamic'])
+import unbrakeConjuctions from './utils/unbrakeConjuctions';
 
 function App() {
+  useEffect(()=>{
+    unbrakeConjuctions();
+  }, [])
+
   return (
     <Root>
       <Head>
@@ -22,13 +21,10 @@ function App() {
 
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" />
       </Head>
-
-      <Navbar />
       <div className="content">
         <React.Suspense fallback={<em>Ładowanie...</em>}>
           <Router >
-            {/* <Dynamic path="dynamic" /> */}
-            <Routes path="*" />
+            <Routes default />
           </Router>
         </React.Suspense>
       </div>
