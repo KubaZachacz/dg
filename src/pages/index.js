@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from '@emotion/styled';
+import { scroller } from 'react-scroll';
+
 import { Container } from '../components/ui';
 import HomeImage from '../components/HomeImage';
 import AOS from 'aos';
@@ -9,7 +11,9 @@ import Offers from '../components/Offers';
 import Pricing from '../components/Pricing';
 import Team from './../components/Team';
 import Contact from './../components/Contact';
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
+import { useLocation } from 'react-static';
+import Link from './../components/Link';
 
 const Header = styled.header`
   position: relative;
@@ -109,7 +113,8 @@ const PageTitle = styled.h1`
   }
 `;
 
-const Button = styled.button`
+const Button = styled(Link)`
+  display: inline-block;
   border: none;
   color: white;
   background: #EAA636;
@@ -127,18 +132,27 @@ const Button = styled.button`
 
 export default () => {
 
+  const location = useLocation();
+
   useEffect(() => {
     AOS.init({
       once: true,
       duration: 600,
     });
-  }, [])
 
-  const addHash = (hash) => {
     if (typeof window !== 'undefined') {
-      window.location.hash = hash;
+      const { hash } = document.location;
+
+      if (hash) {
+        const el = hash.replace('#', '');
+
+        scroller.scrollTo(el, {
+          duration: 0,
+          smooth: false
+        })
+      }
     }
-  }
+  }, [])
 
 
   return (
@@ -151,7 +165,7 @@ export default () => {
               <HomeImage />
               <Box>
                 <PageTitle>Kancelaria Radcy Prawnego <strong>Dawid Gawrysiak</strong></PageTitle>
-                <Button onClick={() => addHash('kancelaria')}>Dowiedz się więcej</Button>
+                <Button to="/" scroll="kancelaria">Dowiedz się więcej</Button>
               </Box>
             </DesktopContent>
             <MobileContent>

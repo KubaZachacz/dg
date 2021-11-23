@@ -99,10 +99,6 @@ const Contact = () => {
             src="https://umap.openstreetmap.fr/pl/map/kancelaria-radcy-prawnego-dawid-gawrysiak_305424?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false#8/52.698/18.094"></iframe>
         </Map>
       </Container>
-      {/* <Map>
-        <iframe width="100%" height="100%" frameBorder="0" allowFullScreen
-          src="https://umap.openstreetmap.fr/pl/map/kancelaria-radcy-prawnego-dawid-gawrysiak_305424?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false#8/52.698/18.094"></iframe>
-      </Map> */}
       <Footer isFloating />
     </Wrapper>
   )

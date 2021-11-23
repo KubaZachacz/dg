@@ -27,8 +27,8 @@ const Footer = ({ isFloating }) => {
   return (
     <StyledFooter isFloating={isFloating}>
       Kancelaria Radcy Prawnego Dawid Gawrysiak | <a href="mailto:kancelaria@dgprawo.pl">kancelaria@dgprawo.pl</a> | <a href="tel:661582832">+48 661 497 118</a> |{" "}
-      <Link to="/rodo">Klauzula informacyjna RODO</Link> |{" "}
-      <Link to="/cookies">Polityka prywatności i cookies</Link>
+      <a href="/rodo">Klauzula informacyjna RODO</a> |{" "}
+      <a href="/cookies">Polityka prywatności i cookies</a>
     </StyledFooter>
   )
 }

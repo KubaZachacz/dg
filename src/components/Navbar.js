@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react'
 import styled from '@emotion/styled'
 import { Container } from './ui';
 import logo from '../assets/logo.png';
-import { Link } from 'components/Router'
 import { useRoutePath } from 'react-static';
 
 import HamburgerMenu from 'react-hamburger-menu';
 import { Collapse } from 'react-collapse';
+
+import Link from './Link';
 
 const NavContainer = styled(Container)`
   @media (max-width: 992px) {
@@ -49,6 +50,8 @@ const NavLink = styled(Link)`
   font-weight: 500;
   text-align: center;
   color: inherit;
+
+  cursor: pointer;
 
   @media (max-width: 1200px) {
     font-size: 16px;
@@ -93,39 +96,33 @@ const Navbar = () => {
     setIsHomePage(path === '/');
   }, [path])
 
-  const addHash = (hash) => {
-    if (typeof window !== 'undefined') {
-      window.location.hash = hash;
-    }
-  }
-
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <NavContainer>
       <DesktopNavbar>
-        <Link to="/"><Logo src={logo} alt="logo" /></Link>
+        <a href="/"><Logo src={logo} alt="logo" /></a>
 
         <Nav isHomePage={isHomePage}>
-          <NavLink to="/" onClick={() => addHash('kancelaria')}>Kancelaria</NavLink>
-          <NavLink to="/" onClick={() => addHash('praktyka')}>Praktyka</NavLink>
-          <NavLink to="/" onClick={() => addHash('wynagrodzenie')}>Wynagrodzenie</NavLink>
-          <NavLink to="/" onClick={() => addHash('zespol')}>Zespół</NavLink>
-          <NavLink to="/" onClick={() => addHash('kontakt')}>Kontakt</NavLink>
+          <NavLink to="/" scroll="kancelaria" >Kancelaria</NavLink>
+          <NavLink to="/" scroll="praktyka" >Praktyka</NavLink>
+          <NavLink to="/" scroll="wynagrodzenie">Wynagrodzenie</NavLink>
+          <NavLink to="/" scroll="zespol">Zespół</NavLink>
+          <NavLink to="/" scroll="kontakt" >Kontakt</NavLink>
         </Nav>
       </DesktopNavbar>
       <MobileNavbar>
-        <Link to="/"><Logo src={logo} alt="logo" /></Link>
+        <a href="/"><Logo src={logo} alt="logo" /></a>
         <HamburgerMenu isOpen={isOpen} width={26} height={20} menuClicked={() => setIsOpen(!isOpen)} />
       </MobileNavbar>
 
       <Collapse isOpened={isOpen}>
         <MobileNav isHomePage={isHomePage}>
-          <NavLink to="/" onClick={() => addHash('kancelaria')}>Kancelaria</NavLink>
-          <NavLink to="/" onClick={() => addHash('praktyka')}>Praktyka</NavLink>
-          <NavLink to="/" onClick={() => addHash('wynagrodzenie')}>Wynagrodzenie</NavLink>
-          <NavLink to="/" onClick={() => addHash('zespol')}>Zespół</NavLink>
-          <NavLink to="/" onClick={() => addHash('kontakt')}>Kontakt</NavLink>
+          <NavLink to="/" scroll="kancelaria">Kancelaria</NavLink>
+          <NavLink to="/" scroll="praktyka">Praktyka</NavLink>
+          <NavLink to="/" scroll="wynagrodzenie">Wynagrodzenie</NavLink>
+          <NavLink to="/" scroll="zespol">Zespół</NavLink>
+          <NavLink to="/" scroll="kontakt">Kontakt</NavLink>
         </MobileNav>
       </Collapse>
     </NavContainer>
