@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Root, Routes, Head } from 'react-static'
 import { Router } from 'components/Router'
+import CookieConsent from "react-cookie-consent";
 
 import './app.css'
 import unbrakeConjuctions from './utils/unbrakeConjuctions';
@@ -23,6 +24,14 @@ function App() {
         <meta property="og:image:width" content="256" />
         <meta property="og:image:height" content="256" />
         <meta property="og:image" content="./ogimage.jpg" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53265383-1"></script>
+
+        <script dangerouslySetInnerHTML={{
+          __html: `          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-53265383-1');`
+        }} />
 
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700"
@@ -36,6 +45,13 @@ function App() {
             <Routes default />
           </Router>
         </React.Suspense>
+        <CookieConsent
+          style={{ background: "#0b2d4d", fontSize: '16px' }}
+          buttonStyle={{ background: "#eaa636", color: 'white', fontSize: '16px' }}
+          buttonText="Ok"
+        >
+          Ta strona używa plików cookies do prawidłowego funkcjonowania oraz w celach analitycznych.
+        </CookieConsent>
       </div>
     </Root>
   )

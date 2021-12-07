@@ -54,7 +54,7 @@ const team = [
     lastName: 'Mądrowski',
     role: 'Prawnik',
     lang: 'angielski oraz francuski',
-    desc: 'Aplikację radcowską odbył w Okręgowej Izbie Radców Prawnych w Poznaniu. Przez 10 lat zdobywał doświadczenie w kancelariach w Poznaniu. Jego praktyka obejmuje doradztwo w zakresie prawa cywilnego, prawa gospodarczego i handlowego, a także w zakresie spraw transgranicznych oraz windykacji. Dzięki zdobytemu doświadczeniu i stale poszerzanej wiedzy merytorycznej, zapewnia naszym Klientom profesjonalną obsługę prawną, w pełni angażując się w każdą z prowadzonych spraw, pozostając do dyspozycji Klienta niezmiennie na każdym etapie obsługi. Szczególne znaczenie ma dla niego zapewnienie każdemu Klientowi należytej i kompleksowej pomocy prawnej.',
+    desc: 'Aplikację radcowską odbył w Okręgowej Izbie Radców Prawnych w Poznaniu. Przez 10 lat zdobywał doświadczenie w kancelariach w Poznaniu. Jego praktyka obejmuje doradztwo w zakresie prawa cywilnego, prawa gospodarczego i handlowego, a także w zakresie spraw transgranicznych oraz windykacji. Dzięki zdobytemu doświadczeniu i stale poszerzanej wiedzy merytorycznej, zapewnia naszym klientom profesjonalną obsługę prawną, w pełni angażując się w każdą z prowadzonych spraw, pozostając do dyspozycji klienta niezmiennie na każdym etapie obsługi. Szczególne znaczenie ma dla niego zapewnienie każdemu klientowi należytej i kompleksowej pomocy prawnej.',
   },
 ]
 

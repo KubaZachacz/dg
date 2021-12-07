@@ -110,7 +110,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 42);
+/******/ 	return __webpack_require__(__webpack_require__.s = 41);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -165,19 +165,19 @@ module.exports = require("react-static");
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = require("path");
+module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-plugin-universal-import/universalImport");
+module.exports = require("path");
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/extends");
+module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
 /* 8 */
@@ -186,7 +186,7 @@ module.exports = require("@babel/runtime/helpers/extends");
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof = __webpack_require__(19);
+var _typeof = __webpack_require__(18);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -225,7 +225,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(48);
+var _requireUniversalModule = __webpack_require__(47);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -240,7 +240,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(50);
+var _reportChunks = __webpack_require__(49);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -254,23 +254,23 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(26);
+var _propTypes = __webpack_require__(25);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(28);
+var _hoistNonReactStatics = __webpack_require__(27);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _context = __webpack_require__(27);
+var _context = __webpack_require__(26);
 
 var _context2 = _interopRequireDefault(_context);
 
-var _utils = __webpack_require__(20);
+var _utils = __webpack_require__(19);
 
-var _helpers = __webpack_require__(51);
+var _helpers = __webpack_require__(50);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -654,7 +654,7 @@ function universal(asyncModule) {
     return UniversalComponent;
   }(_react2["default"].Component), _class.contextType = _context2["default"], _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(47)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(46)(module)))
 
 /***/ }),
 /* 9 */
@@ -667,11 +667,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _utils = __webpack_require__(20);
+var _utils = __webpack_require__(19);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(49)("" + id);
+    return __webpack_require__(48)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -693,26 +693,60 @@ module.exports = require("@reach/router");
 
 /***/ }),
 /* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(17);
-
-
-
-
-var Layout = function Layout(_ref) {
-  var children = _ref.children;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], null));
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Layout);
+module.exports = require("react-scroll");
 
 /***/ }),
 /* 13 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-collapse");
+
+/***/ }),
+/* 14 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21);
+
+
+var _templateObject;
+
+
+
+
+var StyledFooter = _emotion_styled__WEBPACK_IMPORTED_MODULE_2___default.a.footer(_templateObject || (_templateObject = _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0___default()(["\n  position: ", ";\n  bottom: 16px;\n  left: 8px;\n  right: 8px;\n\n  padding: ", ";\n\n  \n  text-align: center;\n  font-size: 12px;\n\n  & > a {\n    color: inherit;\n\n    &:hover {\n      text-decoration: underline;\n    }\n  }\n"])), function (_ref) {
+  var isFloating = _ref.isFloating;
+  return isFloating ? 'absolute' : 'static';
+}, function (_ref2) {
+  var isFloating = _ref2.isFloating;
+  return isFloating ? 0 : '8px 0';
+});
+
+var Footer = function Footer(_ref3) {
+  var isFloating = _ref3.isFloating;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledFooter, {
+    isFloating: isFloating
+  }, "Kancelaria Radcy Prawnego Dawid Gawrysiak | ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "mailto:kancelaria@dgprawo.pl"
+  }, "kancelaria@dgprawo.pl"), " | ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "tel:661582832"
+  }, "+48 661 497 118"), " |", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "/rodo"
+  }, "Klauzula informacyjna RODO"), " |", " ");
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Footer);
+
+/***/ }),
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -725,15 +759,15 @@ var Layout = function Layout(_ref) {
 /* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
 /* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3);
-/* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(24);
+/* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(23);
 /* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_logo_png__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_hamburger_menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(37);
+/* harmony import */ var react_hamburger_menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(40);
 /* harmony import */ var react_hamburger_menu__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_hamburger_menu__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react_collapse__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(14);
+/* harmony import */ var react_collapse__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(13);
 /* harmony import */ var react_collapse__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_collapse__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(15);
+/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(16);
 
 
 
@@ -834,23 +868,17 @@ var Navbar = function Navbar() {
 /* harmony default export */ __webpack_exports__["a"] = (Navbar);
 
 /***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-collapse");
-
-/***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
 /* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20);
 /* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(16);
+/* harmony import */ var react_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
 /* harmony import */ var react_scroll__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_scroll__WEBPACK_IMPORTED_MODULE_3__);
 
 
@@ -883,57 +911,7 @@ var Link = function Link(_ref) {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-scroll");
-
-/***/ }),
 /* 17 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
-/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22);
-
-
-var _templateObject;
-
-
-
-
-var StyledFooter = _emotion_styled__WEBPACK_IMPORTED_MODULE_2___default.a.footer(_templateObject || (_templateObject = _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0___default()(["\n  position: ", ";\n  bottom: 16px;\n  left: 8px;\n  right: 8px;\n\n  padding: ", ";\n\n  \n  text-align: center;\n  font-size: 12px;\n\n  & > a {\n    color: inherit;\n\n    &:hover {\n      text-decoration: underline;\n    }\n  }\n"])), function (_ref) {
-  var isFloating = _ref.isFloating;
-  return isFloating ? 'absolute' : 'static';
-}, function (_ref2) {
-  var isFloating = _ref2.isFloating;
-  return isFloating ? 0 : '8px 0';
-});
-
-var Footer = function Footer(_ref3) {
-  var isFloating = _ref3.isFloating;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledFooter, {
-    isFloating: isFloating
-  }, "Kancelaria Radcy Prawnego Dawid Gawrysiak | ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "mailto:kancelaria@dgprawo.pl"
-  }, "kancelaria@dgprawo.pl"), " | ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "tel:661582832"
-  }, "+48 661 497 118"), " |", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "/rodo"
-  }, "Klauzula informacyjna RODO"), " |", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "/cookies"
-  }, "Polityka prywatno\u015Bci i cookies"));
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Footer);
-
-/***/ }),
-/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -946,10 +924,14 @@ var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_)
 var external_react_static_ = __webpack_require__(4);
 
 // EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/components/Router.js
-var Router = __webpack_require__(22);
+var Router = __webpack_require__(21);
+
+// EXTERNAL MODULE: external "react-cookie-consent"
+var external_react_cookie_consent_ = __webpack_require__(35);
+var external_react_cookie_consent_default = /*#__PURE__*/__webpack_require__.n(external_react_cookie_consent_);
 
 // EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/app.css
-var app = __webpack_require__(57);
+var app = __webpack_require__(56);
 
 // CONCATENATED MODULE: D:/Frontend/dgprawo_react/src/utils/unbrakeConjuctions.js
 function unbrakeConjuctions() {
@@ -972,6 +954,7 @@ function unbrakeConjuctions() {
 ;
 /* harmony default export */ var utils_unbrakeConjuctions = (unbrakeConjuctions);
 // CONCATENATED MODULE: D:/Frontend/dgprawo_react/src/App.js
+
 
 
 
@@ -1009,6 +992,13 @@ function App() {
   }), /*#__PURE__*/external_react_default.a.createElement("meta", {
     property: "og:image",
     content: "./ogimage.jpg"
+  }), /*#__PURE__*/external_react_default.a.createElement("script", {
+    async: true,
+    src: "https://www.googletagmanager.com/gtag/js?id=UA-53265383-1"
+  }), /*#__PURE__*/external_react_default.a.createElement("script", {
+    dangerouslySetInnerHTML: {
+      __html: "          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', 'UA-53265383-1');"
+    }
   }), /*#__PURE__*/external_react_default.a.createElement("link", {
     href: "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700",
     rel: "stylesheet"
@@ -1021,25 +1011,36 @@ function App() {
     fallback: /*#__PURE__*/external_react_default.a.createElement("em", null, "\u0141adowanie...")
   }, /*#__PURE__*/external_react_default.a.createElement(Router["a" /* Router */], null, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Routes"], {
     "default": true
-  })))));
+  }))), /*#__PURE__*/external_react_default.a.createElement(external_react_cookie_consent_default.a, {
+    style: {
+      background: "#0b2d4d",
+      fontSize: '16px'
+    },
+    buttonStyle: {
+      background: "#eaa636",
+      color: 'white',
+      fontSize: '16px'
+    },
+    buttonText: "Ok"
+  }, "Ta strona u\u017Cywa plik\xF3w cookies do prawid\u0142owego funkcjonowania oraz w celach analitycznych.")));
 }
 
 /* harmony default export */ var src_App = __webpack_exports__["a"] = (App);
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/typeof");
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof2 = __webpack_require__(19);
+var _typeof2 = __webpack_require__(18);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1199,13 +1200,13 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 };
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1216,31 +1217,31 @@ module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = require("D:\\Frontend\\dgprawo_react\\node_modules\\react-static\\lib\\browser");
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1267,25 +1268,25 @@ var ReportContext = _react2["default"].createContext({
 exports["default"] = ReportContext;
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1298,176 +1299,7 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 32 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
-/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(12);
-
-
-var _templateObject;
-
-
-
-
-
-var StyledContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_2___default()(_components_ui__WEBPACK_IMPORTED_MODULE_3__[/* Container */ "a"])(_templateObject || (_templateObject = _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0___default()(["\n  margin-top: 60px;\n  font-size: 16px;\n\n\n  h2 {\n    font-size: 24px;\n    font-family: 'Roboto Slab', serif;\n  }\n\n  p, li {\n    line-height: 1.4;\n  }\n\n  ol li {\n    margin-bottom: 4px;\n  }\n\n  .paragraph {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    text-align: center;\n  }\n\n  a {\n    color: inherit;\n    &:hover {\n      text-decoration: underline;\n    }\n  }\n"])));
-
-var cookies = function cookies() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "POLITYKA PRYWATNO\u015ACI"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Celem niniejszej Polityki Prywatno\u015Bci jest wyja\u015Bnienie zasad, na\xA0jakich przetwarzane s\u0105 Pa\u0144stwa dane osobowe.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "paragraph"
-  }, "\xA7 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Administratorem Pa\u0144stwa danych osobowych jest radca prawny Dawid Gawrysiak prowadz\u0105cy dzia\u0142alno\u015B\u0107 gospodarcz\u0105 pod firm\u0105 Kancelaria Radcy Prawnego Dawid Gawrysiak, \u015Awierk\xF3wiec 19B, 88-300 Mogilno, "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "NIP: 5571634491, REGON 341370566, (dalej: Administrator danych). Dane osobowe zbierane s\u0105 na\xA0zasadach okre\u015Blonych w\xA0przepisach o\xA0ochronie danych osobowych, w\xA0tym w Rozporz\u0105dzeniu Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony os\xF3b fizycznych w zwi\u0105zku z przetwarzaniem danych osobowych i w sprawie swobodnego przep\u0142ywu takich danych oraz uchylenia dyrektywy 95/46/WE (dalej \u201ERODO\u201D) oraz\xA0w\xA0polskich przepisach prawa, w\xA0tym ustawie z\xA0dnia 10 maja 2018 r. o\xA0ochronie danych osobowych.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "paragraph"
-  }, "\xA7 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Zbieramy i\xA0przetwarzamy dane osobowe w celu:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "wykonywania um\xF3w zawieranych przez\xA0kancelari\u0119 z\xA0klientami (podstawa prawna art. 6 ust. 1 lit. b RODO);")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "w\xA0celach wynikaj\u0105cych z\xA0prawnie uzasadnionych interes\xF3w realizowanych przez Administratora danych (podstawa prawna art. 6 ust. 1 lit. f RODO),\xA0")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "w\xA0celu prowadzenia rekrutacji os\xF3b zainteresowanych prac\u0105 lub wsp\xF3\u0142prac\u0105 z\xA0kancelari\u0105 (podstawa prawna, odpowiednio art. 6 ust. 1 lit. c oraz\xA0art. 6 ust. 1 lit. a\xA0RODO)."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Kancelaria przetwarza dane osobowe w\xA0zakresie koniecznym do\xA0wype\u0142nienia obowi\u0105zk\xF3w prawnych ci\u0105\u017C\u0105cych na\xA0kancelarii (podstawa prawna art. 6 ust. 1 lit. c RODO).")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "paragraph"
-  }, "\xA7 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Podanie danych osobowych jest dobrowolne. Przys\u0142uguj\u0105 Pani/Panu nast\u0119puj\u0105ce prawa zwi\u0105zane z przetwarzaniem danych osobowych:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo dost\u0119pu do Pani/Pana danych osobowych;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo \u017C\u0105dania sprostowania Pani/Pana danych osobowych;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo \u017C\u0105dania usuni\u0119cia Pani/Pana danych osobowych;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo \u017C\u0105dania ograniczenia przetwarzania Pani/Pana danych osobowych;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo wyra\u017Cenia sprzeciwu wobec przetwarzania Pani/Pana danych;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo do przenoszenia Pani/Pana danych osobowych;\xA0")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo wniesienia skargi do Prezesa Urz\u0119du Ochrony Danych Osobowych (wi\u0119cej informacji: https://uodo.gov.pl/)."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Aby skorzysta\u0107 z powy\u017Cszych praw, skontaktuj si\u0119 z nami.\xA0")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Dane kontaktowe:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Kancelaria Radcy Prawnego Dawid Gawrysiak")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "ul. Winiarska 56D/35, 60-654 Pozna\u0144")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "E-mail: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "mailto:kancelaria@dgprawo.pl"
-  }, "kancelaria@dgprawo.pl"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "M: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "tel:+48661497118"
-  }, "661 497 118")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "paragraph"
-  }, "\xA7 4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Pa\u0144stwa dane osobowe b\u0119d\u0105 przetwarzane, w\xA0 zale\u017Cno\u015Bci od\xA0 poszczeg\xF3lnych cel\xF3w i\xA0 podstawy prawnej przetwarzania, odpowiednio: ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "do czasu up\u0142ywu termin\xF3w przedawnienia zwi\u0105zanych z\xA0 umow\u0105, z\xA0 kt\xF3r\u0105 jest zwi\u0105zane przetwarzanie danych osobowych; ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "do czasu zrealizowania w\u0142a\u015Bciwych prawnie uzasadnionych interes\xF3w realizowanych przez Administratora danych zwi\u0105zanych z\xA0 przetwarzaniem okre\u015Blonych danych; ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "do czasu up\u0142ywu termin\xF3w zwi\u0105zanych z\xA0 przedawnieniem obowi\u0105zk\xF3w wynikaj\u0105cych z\xA0 przepis\xF3w prawa; ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "do czasu wniesienia sprzeciwu albo cofni\u0119cia zgody w\xA0 zakresie przetwarzania danych w\xA0 celach marketingowych."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "paragraph"
-  }, "\xA7 5"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Pa\u0144stwa dane osobowe b\u0119d\u0105 udost\u0119pniane wy\u0142\u0105cznie podmiotom upowa\u017Cnionym na\xA0 podstawie przepis\xF3w prawa albo umowy powierzenia z\xA0 Administratorem.\xA0 ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "paragraph"
-  }, "\xA7 6"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Pa\u0144stwa dane osobowe przetwarzane s\u0105 w\xA0 siedzibie kancelarii i\xA0 nie s\u0105 przekazywane do\xA0 kraj\xF3w znajduj\u0105cych si\u0119 poza Uni\u0105 Europejsk\u0105.W\xA0 razie przekazania danych osobowych do\xA0 pa\u0144stw trzecich (znajduj\u0105cych si\u0119 poza UE) kancelaria zastosuje odpowiednie instrumenty maj\u0105ce na\xA0 celu zapewnienie bezpiecze\u0144stwa Pa\u0144stwa danych osobowych.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Pa\u0144stwa dane osobowe nie s\u0105 przedmiotem profilowania, jak te\u017C \u017Cadnej innej formy zautomatyzowanego podejmowania decyzji.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "paragraph"
-  }, "\xA7 7"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Wszelkie zmiany Polityki Prywatno\u015Bci b\u0119d\u0105 publikowane na niniejszej stronie internetowej "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "http://www.dgprawo.pl"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "www.dgprawo.pl")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, " w zak\u0142adce \u201EPolityka prywatno\u015Bci\u201D do kt\xF3rej link znajduje si\u0119 w stopce strony.Zmiany b\u0119d\u0105 obowi\u0105zywa\u0142y na przysz\u0142o\u015B\u0107.Prosimy o zapoznawanie si\u0119 ze zmianami.\xA0 ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "POLITYKA COOKIES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Niniejsza strona internetowa u\u017Cywa plik\xF3w Cookies (tzw. \u201Eciasteczka\u201D), stanowi\u0105cych dane informatyczne, w\xA0szczeg\xF3lno\u015Bci pliki tekstowe, kt\xF3re przechowywane s\u0105 w\xA0urz\u0105dzeniu ko\u0144cowym U\u017Cytkownika Serwisu i\xA0przeznaczone s\u0105 do\xA0korzystania ze stron internetowych Serwisu. Cookies zazwyczaj zawieraj\u0105 nazw\u0119 strony internetowej, z\xA0kt\xF3rej pochodz\u0105, czas przechowywania ich na\xA0urz\u0105dzeniu ko\u0144cowym oraz\xA0unikalny numer.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Podmiotem zamieszczaj\u0105cym na\xA0urz\u0105dzeniu ko\u0144cowym U\u017Cytkownika Serwisu pliki Cookies oraz\xA0uzyskuj\u0105cym do\xA0nich dost\u0119p jest Kancelaria Radcy Prawnego Dawid Gawrysiak, \u015Awierk\xF3wiec 19B, 88-300 Mogilno, NIP: 5571634491, REGON 341370566 (dalej: Operator Serwisu).")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Pliki Cookies wykorzystywane s\u0105 w\xA0celu:\xA0")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 2
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "dostosowania zawarto\u015Bci stron internetowych Serwisu do\xA0preferencji U\u017Cytkownika oraz\xA0optymalizacji korzystania ze stron internetowych; w\xA0szczeg\xF3lno\u015Bci pliki te pozwalaj\u0105 rozpozna\u0107 urz\u0105dzenie U\u017Cytkownika Serwisu i\xA0odpowiednio wy\u015Bwietli\u0107 stron\u0119 internetow\u0105, dostosowan\u0105 do\xA0jego indywidualnych potrzeb;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 2
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "tworzenia statystyk, kt\xF3re pomagaj\u0105 zrozumie\u0107, w\xA0jaki spos\xF3b U\u017Cytkownicy Serwisu korzystaj\u0105 ze stron internetowych, co umo\u017Cliwia ulepszanie ich struktury i\xA0zawarto\u015Bci;"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "W ramach Serwisu stosowane s\u0105 trzy rodzaje plik\xF3w Cookies: \u201Esesyjne\u201D (session Cookies), \u201Esta\u0142e\u201D (persistent Cookies) oraz\xA0\u201Eanalityczne\u201D. Cookies \u201Esesyjne\u201D s\u0105 plikami tymczasowymi, kt\xF3re przechowywane s\u0105 w\xA0urz\u0105dzeniu ko\u0144cowym U\u017Cytkownika do\xA0czasu wylogowania (opuszczenia strony). \u201ESta\u0142e\u201D pliki Cookies przechowywane s\u0105 w\xA0urz\u0105dzeniu ko\u0144cowym U\u017Cytkownika przez\xA0czas okre\u015Blony w\xA0parametrach plik\xF3w Cookies lub do\xA0czasu ich usuni\u0119cia przez\xA0U\u017Cytkownika. Cookies \u201Eanalityczne\u201D gromadz\u0105 informacje o\xA0sposobie korzystania ze strony, typie strony, z\xA0jakiej U\u017Cytkownik zosta\u0142 przekierowany, oraz\xA0liczbie odwiedzin i\xA0czasie wizyty U\u017Cytkownika w\xA0Serwisie. Informacje te nie rejestruj\u0105 konkretnych danych osobowych U\u017Cytkownika, lecz s\u0142u\u017C\u0105 do\xA0opracowania statystyk korzystania ze strony internetowej Serwisu.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Cookies nie zmieniaj\u0105 konfiguracji komputera U\u017Cytkownika, nie s\u0142u\u017C\u0105 do\xA0instalowania b\u0105d\u017A odinstalowania jakiegokolwiek programu komputerowego, nie ingeruj\u0105 w\xA0integralno\u015B\u0107 systemu b\u0105d\u017A danych U\u017Cytkownika.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "W wielu przypadkach oprogramowanie s\u0142u\u017C\u0105ce do\xA0przegl\u0105dania stron internetowych (przegl\u0105darka internetowa) domy\u015Blnie dopuszcza przechowywanie plik\xF3w Cookies w\xA0urz\u0105dzeniu ko\u0144cowym U\u017Cytkownika. U\u017Cytkownicy Serwisu mog\u0105 dokona\u0107 w\xA0ka\u017Cdym czasie zmiany ustawie\u0144 dotycz\u0105cych plik\xF3w Cookies. Ustawienia te mog\u0105 zosta\u0107 zmienione w\xA0szczeg\xF3lno\u015Bci w\xA0taki spos\xF3b, aby blokowa\u0107 automatyczn\u0105 obs\u0142ug\u0119 plik\xF3w Cookies w\xA0ustawieniach przegl\u0105darki internetowej b\u0105d\u017A informowa\u0107 o\xA0ich ka\u017Cdorazowym zamieszczeniu w\xA0urz\u0105dzeniu U\u017Cytkownika Serwisu. Szczeg\xF3\u0142owe informacje o\xA0mo\u017Cliwo\u015Bci i\xA0sposobach obs\u0142ugi plik\xF3w Cookies dost\u0119pne s\u0105 w\xA0ustawieniach oprogramowania (przegl\u0105darki internetowej).")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Wi\u0119cej informacji na\xA0temat plik\xF3w Cookies dost\u0119pnych jest w\xA0sekcji \u201EPomoc\u201D w\xA0menu przegl\u0105darki internetowej."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "\xA0")));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (cookies);
-
-/***/ }),
-/* 33 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
-/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(12);
-
-
-var _templateObject;
-
-
-
-
-
-var StyledContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_2___default()(_components_ui__WEBPACK_IMPORTED_MODULE_3__[/* Container */ "a"])(_templateObject || (_templateObject = _babel_runtime_helpers_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0___default()(["\n  margin-top: 60px;\n  font-size: 16px;\n\n\n  & > h2 {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    margin-top: 40px;\n  }\n\n  p, li {\n    line-height: 1.4;\n  }\n\n  a {\n    color: inherit;\n    &:hover {\n      text-decoration: underline;\n    }\n  }\n"])));
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Od dnia 25 maja 2018 r. obowi\u0105zuje Rozporz\u0105dzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony os\xF3b fizycznych w zwi\u0105zku z przetwarzaniem danych osobowych i w sprawie swobodnego przep\u0142ywu takich danych oraz uchylenia dyrektywy 95/46/WE (dalej \u201ERODO\u201D), dlatego przekazujemy informacje dotycz\u0105ce przetwarzanych przez nas danych osobowych:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "ADMINISTRATOR DANYCH OSOBOWYCH"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Administratorem danych osobowych jest radca prawny Dawid Gawrysiak prowadz\u0105cy dzia\u0142alno\u015B\u0107 gospodarcz\u0105 pod firm\u0105 Kancelaria Radcy Prawnego Dawid Gawrysiak, \u015Awierk\xF3wiec 19B, 88-300 Mogilno, NIP: 5571634491, REGON 341370566, (dalej: Administrator danych).")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Dane do kontaktu:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "ul. Winiarska 56D/35, 60-654 Pozna\u0144")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "E-mail: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "mailto:kancelaria@dgprawo.pl"
-  }, "kancelaria@dgprawo.pl"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "M: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "tel:+48661497118"
-  }, "661 497 118")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "CELE PRZETWARZANIA DANYCH OSOBOWYCH I PODSTAWY PRAWNE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Dane osobowe przetwarzamy w celu:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "podj\u0119cia dzia\u0142a\u0144 zmierzaj\u0105cych do zawarcia lub zmiany umowy o \u015Bwiadczenie pomocy prawnej, umowy o obs\u0142ug\u0119 prawn\u0105, lub podj\u0119cia nowego zlecenia, takich jak: korespondencja w sprawie uzgodnienia warunk\xF3w umowy, kontakt telefoniczny, listowny i za po\u015Brednictwem poczty e-mail (podstawa prawna: art. 6 ust. 1 lit. b) RODO);")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "wykonania ci\u0105\u017C\u0105cych na Administratorze obowi\u0105zk\xF3w prawnych i ksi\u0119gowych, np. wystawienie faktury, przechowywania dokumentacji ksi\u0119gowej, co stanowi uzasadniony interes Administratora (podstawa prawna: art. 6 ust. 1 lit. f RODO);")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "wewn\u0119trznych cel\xF3w Administratora takich jak, np. praca nad ulepszaniem obs\u0142ugi klienta, czy analiza finansowa stanowi\u0105ca realizacj\u0119 prawnie uzasadnionego interesu Administratora (podstawa prawna: art. 6 ust. 1 lit. f) RODO);")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "w celu oferowania przez Administratora us\u0142ug bezpo\u015Brednio (podstawa prawna: art. 6 ust. 1 lit. f RODO);\xA0\xA0")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "w celu ewentualnego dochodzenia lub obrony przed roszczeniami, a tak\u017Ce w celach archiwalnych prowadzonych na wypadek, wskazanej przepisami prawa, potrzeby wykazania okre\u015Blonych okoliczno\u015Bci, co stanowi realizacj\u0119 prawnie uzasadnionego interesu Administratora (podstawa prawna: art.6 ust.1 "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "lit. f) RODO)."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "JAK D\u0141UGO B\u0118DZIEMY PRZECHOWYWA\u0106 DANE OSOBOWE?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "W zakresie danych zgromadzonych w celu reprezentacji Klienta w ramach wykonywania zawodu radcy prawnego, dane osobowe b\u0119d\u0105 przechowywane przez okres 10 lat od ko\u0144ca roku, w kt\xF3rym zako\u0144czy\u0142o si\u0119 post\u0119powanie, w kt\xF3rym dane osobowe zosta\u0142y zgromadzone.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "W zakresie zawarcia i realizacji umowy, ustalenia, dochodzenia lub obrony przed roszczeniami dane b\u0119d\u0105 przechowywane do czasu zako\u0144czenia jej realizacji, a po tym czasie przez okres wymagany przez przepisy prawa lub dla zabezpieczenia ewentualnych roszcze\u0144 (b\u0119dzie to co do zasady najd\u0142u\u017Cszy mo\u017Cliwy okres przedawnienia roszcze\u0144 plus jeden rok, kt\xF3ry to dodatkowy termin wynika z hipotetycznej mo\u017Cliwo\u015Bci zg\u0142oszenia roszczenia tu\u017C przed up\u0142ywem terminu przedawnienia).\xA0")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "W zakresie danych przetwarzanych w celu wykonania obowi\u0105zk\xF3w prawnych dane osobowe b\u0119d\u0105 przechowywane przez czas, w kt\xF3rym przepisy nakazuj\u0105 Administratorowi przechowywa\u0107 dane, "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "np. dokumentacja podatkowa musi by\u0107 przechowywana przez okres co najmniej 5 lat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "W przypadku gdy nie dojdzie do zawarcia umowy w oparciu o przeprowadzone negocjacje, dane osobowe b\u0119d\u0105 przechowywane przez okres niezb\u0119dny dla zabezpieczenia ewentualnych roszcze\u0144.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "W zakresie wewn\u0119trznych cel\xF3w administracyjnych, a tak\u017Ce cel\xF3w archiwalnych, dane osobowe b\u0119d\u0105 przechowywane do czasu wype\u0142nienia prawnie uzasadnionych interes\xF3w Administratora stanowi\u0105cych podstaw\u0119 przetwarzania danych.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "KOMU PRZEKAZUJEMY DANE OSOBOWE?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "B\u0119dziemy przekazywa\u0107 dane osobowe podmiotom kt\xF3rym zlecimy us\u0142ugi zwi\u0105zane przetwarzaniem danych osobowych, np. biuro rachunkowe, firmy \u015Bwiadcz\u0105ce us\u0142ugi hostingowe. Takie podmioty przetwarzaj\u0105 dane na podstawie umowy z nami i tylko zgodnie z naszymi poleceniami.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "PRAWA ZWI\u0104ZANE Z PRZETWARZANIEM DANYCH OSOBOWYCH\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Przys\u0142uguj\u0105 Pani/Panu nast\u0119puj\u0105ce prawa zwi\u0105zane z przetwarzaniem danych osobowych:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo dost\u0119pu do Pani/Pana danych osobowych;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo \u017C\u0105dania sprostowania Pani/Pana danych osobowych;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo \u017C\u0105dania usuni\u0119cia Pani/Pana danych osobowych;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo \u017C\u0105dania ograniczenia przetwarzania Pani/Pana danych osobowych;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo wyra\u017Cenia sprzeciwu wobec przetwarzania Pani/Pana danych;")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo do przenoszenia Pani/Pana danych osobowych;\xA0")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "prawo wniesienia skargi do Prezesa Urz\u0119du Ochrony Danych Osobowych (wi\u0119cej informacji: https://uodo.gov.pl/)."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Aby skorzysta\u0107 z powy\u017Cszych praw, skontaktuj si\u0119 z nami.\xA0")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Dane kontaktowe:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "ul. Winiarska 56D/35, 60-654 Pozna\u0144")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "E-mail: kancelaria@dgprawo.pl")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    "aria-level": 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "M: 661 497\xA0118"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Jednocze\u015Bnie informujemy, i\u017C nie przetwarzamy danych osobowych w spos\xF3b zautomatyzowany, ani nie profilujemy Pani/Pana danych osobowych."))));
-});
-
-/***/ }),
-/* 34 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1487,13 +1319,13 @@ var styled_ = __webpack_require__(2);
 var styled_default = /*#__PURE__*/__webpack_require__.n(styled_);
 
 // EXTERNAL MODULE: external "react-scroll"
-var external_react_scroll_ = __webpack_require__(16);
+var external_react_scroll_ = __webpack_require__(12);
 
 // EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/components/ui.js
 var ui = __webpack_require__(3);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/extends"
-var extends_ = __webpack_require__(7);
+var extends_ = __webpack_require__(5);
 var extends_default = /*#__PURE__*/__webpack_require__.n(extends_);
 
 // CONCATENATED MODULE: D:/Frontend/dgprawo_react/src/utils/valuesMap.js
@@ -2562,22 +2394,22 @@ function HomeImage(props) {
 
 /* harmony default export */ var components_HomeImage = (HomeImage);
 // EXTERNAL MODULE: external "aos"
-var external_aos_ = __webpack_require__(38);
+var external_aos_ = __webpack_require__(36);
 var external_aos_default = /*#__PURE__*/__webpack_require__.n(external_aos_);
 
 // EXTERNAL MODULE: external "aos/dist/aos.css"
-var aos_css_ = __webpack_require__(59);
+var aos_css_ = __webpack_require__(58);
 
 // EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/assets/icon_1.svg
-var icon_1 = __webpack_require__(39);
+var icon_1 = __webpack_require__(37);
 var icon_1_default = /*#__PURE__*/__webpack_require__.n(icon_1);
 
 // EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/assets/icon_2.svg
-var icon_2 = __webpack_require__(40);
+var icon_2 = __webpack_require__(38);
 var icon_2_default = /*#__PURE__*/__webpack_require__.n(icon_2);
 
 // EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/assets/icon_3.svg
-var icon_3 = __webpack_require__(41);
+var icon_3 = __webpack_require__(39);
 var icon_3_default = /*#__PURE__*/__webpack_require__.n(icon_3);
 
 // CONCATENATED MODULE: D:/Frontend/dgprawo_react/src/components/Details.js
@@ -2905,7 +2737,8 @@ var Offers_Offers = function Offers() {
     return /*#__PURE__*/external_react_default.a.createElement(Item, {
       key: "item-".concat(id)
     }, /*#__PURE__*/external_react_default.a.createElement("img", {
-      src: './arrow.svg'
+      src: './arrow.svg',
+      alt: ""
     }), " ", /*#__PURE__*/external_react_default.a.createElement("span", null, item));
   })), /*#__PURE__*/external_react_default.a.createElement(MobileOffersImage, null)));
 };
@@ -2936,7 +2769,7 @@ var slicedToArray_ = __webpack_require__(10);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
 
 // EXTERNAL MODULE: external "react-collapse"
-var external_react_collapse_ = __webpack_require__(14);
+var external_react_collapse_ = __webpack_require__(13);
 
 // CONCATENATED MODULE: D:/Frontend/dgprawo_react/src/components/Team.js
 
@@ -2985,7 +2818,7 @@ var team = [{
   lastName: 'Mądrowski',
   role: 'Prawnik',
   lang: 'angielski oraz francuski',
-  desc: 'Aplikację radcowską odbył w Okręgowej Izbie Radców Prawnych w Poznaniu. Przez 10 lat zdobywał doświadczenie w kancelariach w Poznaniu. Jego praktyka obejmuje doradztwo w zakresie prawa cywilnego, prawa gospodarczego i handlowego, a także w zakresie spraw transgranicznych oraz windykacji. Dzięki zdobytemu doświadczeniu i stale poszerzanej wiedzy merytorycznej, zapewnia naszym Klientom profesjonalną obsługę prawną, w pełni angażując się w każdą z prowadzonych spraw, pozostając do dyspozycji Klienta niezmiennie na każdym etapie obsługi. Szczególne znaczenie ma dla niego zapewnienie każdemu Klientowi należytej i kompleksowej pomocy prawnej.'
+  desc: 'Aplikację radcowską odbył w Okręgowej Izbie Radców Prawnych w Poznaniu. Przez 10 lat zdobywał doświadczenie w kancelariach w Poznaniu. Jego praktyka obejmuje doradztwo w zakresie prawa cywilnego, prawa gospodarczego i handlowego, a także w zakresie spraw transgranicznych oraz windykacji. Dzięki zdobytemu doświadczeniu i stale poszerzanej wiedzy merytorycznej, zapewnia naszym klientom profesjonalną obsługę prawną, w pełni angażując się w każdą z prowadzonych spraw, pozostając do dyspozycji klienta niezmiennie na każdym etapie obsługi. Szczególne znaczenie ma dla niego zapewnienie każdemu klientowi należytej i kompleksowej pomocy prawnej.'
 }];
 var DesktopTabs = styled_default.a.div(Team_templateObject2 || (Team_templateObject2 = taggedTemplateLiteral_default()(["\n  @media (max-width: 992px) {\n    display: none;\n  }\n"])));
 var MobileTabs = styled_default.a.div(Team_templateObject3 || (Team_templateObject3 = taggedTemplateLiteral_default()(["\n  display: none;\n\n  @media (max-width: 992px) {\n    display: block;\n  }\n"])));
@@ -3052,7 +2885,7 @@ var Team_Team = function Team() {
 
 /* harmony default export */ var components_Team = (Team_Team);
 // EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/components/Footer.js
-var Footer = __webpack_require__(17);
+var Footer = __webpack_require__(14);
 
 // CONCATENATED MODULE: D:/Frontend/dgprawo_react/src/components/Contact.js
 
@@ -3091,6 +2924,7 @@ var Contact_Contact = function Contact() {
     src: "./mail.svg",
     alt: ""
   }), "Adres korespondencyjny"), /*#__PURE__*/external_react_default.a.createElement(Text, null, "Kancelaria Radcy Prawnego Dawid Gawrysiak", /*#__PURE__*/external_react_default.a.createElement("br", null), "ul. Winiarska 56D/35", /*#__PURE__*/external_react_default.a.createElement("br", null), "60-54 Pozna\u0144", /*#__PURE__*/external_react_default.a.createElement("br", null)))), /*#__PURE__*/external_react_default.a.createElement(Map, null, /*#__PURE__*/external_react_default.a.createElement("iframe", {
+    title: "map",
     width: "100%",
     height: "350px",
     frameBorder: "0",
@@ -3103,13 +2937,13 @@ var Contact_Contact = function Contact() {
 
 /* harmony default export */ var components_Contact = (Contact_Contact);
 // EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/components/Navbar.js
-var Navbar = __webpack_require__(13);
+var Navbar = __webpack_require__(15);
 
 // EXTERNAL MODULE: external "react-static"
 var external_react_static_ = __webpack_require__(4);
 
 // EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/components/Link.js
-var Link = __webpack_require__(15);
+var Link = __webpack_require__(16);
 
 // CONCATENATED MODULE: D:/Frontend/dgprawo_react/src/pages/index.js
 
@@ -3165,7 +2999,101 @@ var Button = styled_default()(Link["a" /* default */])(pages_templateObject7 || 
 });
 
 /***/ }),
-/* 35 */
+/* 32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/taggedTemplateLiteral"
+var taggedTemplateLiteral_ = __webpack_require__(1);
+var taggedTemplateLiteral_default = /*#__PURE__*/__webpack_require__.n(taggedTemplateLiteral_);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(0);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// EXTERNAL MODULE: external "@emotion/styled"
+var styled_ = __webpack_require__(2);
+var styled_default = /*#__PURE__*/__webpack_require__.n(styled_);
+
+// EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/components/ui.js
+var ui = __webpack_require__(3);
+
+// EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/components/Navbar.js
+var Navbar = __webpack_require__(15);
+
+// EXTERNAL MODULE: D:/Frontend/dgprawo_react/src/components/Footer.js
+var Footer = __webpack_require__(14);
+
+// CONCATENATED MODULE: D:/Frontend/dgprawo_react/src/components/Layout.js
+
+
+
+
+var Layout_Layout = function Layout(_ref) {
+  var children = _ref.children;
+  return /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Fragment, null, /*#__PURE__*/external_react_default.a.createElement(Navbar["a" /* default */], null), children, /*#__PURE__*/external_react_default.a.createElement(Footer["a" /* default */], null));
+};
+
+/* harmony default export */ var components_Layout = (Layout_Layout);
+// CONCATENATED MODULE: D:/Frontend/dgprawo_react/src/pages/rodo.js
+
+
+var _templateObject;
+
+
+
+
+
+var StyledContainer = styled_default()(ui["a" /* Container */])(_templateObject || (_templateObject = taggedTemplateLiteral_default()(["\n  margin-top: 60px;\n  font-size: 16px;\n\n\n  & > h2 {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    margin-top: 40px;\n  }\n\n  p, li {\n    line-height: 1.4;\n  }\n\n  a {\n    color: inherit;\n    &:hover {\n      text-decoration: underline;\n    }\n  }\n"])));
+/* harmony default export */ var rodo = __webpack_exports__["default"] = (function () {
+  return /*#__PURE__*/external_react_default.a.createElement(components_Layout, null, /*#__PURE__*/external_react_default.a.createElement(StyledContainer, null, /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("strong", null, "Od dnia 25 maja 2018 r. obowi\u0105zuje Rozporz\u0105dzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony os\xF3b fizycznych w zwi\u0105zku z przetwarzaniem danych osobowych i w sprawie swobodnego przep\u0142ywu takich danych oraz uchylenia dyrektywy 95/46/WE (dalej \u201ERODO\u201D), dlatego przekazujemy informacje dotycz\u0105ce przetwarzanych przez nas danych osobowych:")), /*#__PURE__*/external_react_default.a.createElement("h2", null, "ADMINISTRATOR DANYCH OSOBOWYCH"), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "Administratorem danych osobowych jest radca prawny Dawid Gawrysiak prowadz\u0105cy dzia\u0142alno\u015B\u0107 gospodarcz\u0105 pod firm\u0105 Kancelaria Radcy Prawnego Dawid Gawrysiak, \u015Awierk\xF3wiec 19B, 88-300 Mogilno, NIP: 5571634491, REGON 341370566, (dalej: Administrator danych).")), /*#__PURE__*/external_react_default.a.createElement("h2", null, "Dane do kontaktu:"), /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "ul. Winiarska 56D/35, 60-654 Pozna\u0144")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "E-mail: ", /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "mailto:kancelaria@dgprawo.pl"
+  }, "kancelaria@dgprawo.pl"))), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "M: ", /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "tel:+48661497118"
+  }, "661 497 118")))), /*#__PURE__*/external_react_default.a.createElement("h2", null, "CELE PRZETWARZANIA DANYCH OSOBOWYCH I PODSTAWY PRAWNE"), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "Dane osobowe przetwarzamy w celu:")), /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "podj\u0119cia dzia\u0142a\u0144 zmierzaj\u0105cych do zawarcia lub zmiany umowy o \u015Bwiadczenie pomocy prawnej, umowy o obs\u0142ug\u0119 prawn\u0105, lub podj\u0119cia nowego zlecenia, takich jak: korespondencja w sprawie uzgodnienia warunk\xF3w umowy, kontakt telefoniczny, listowny i za po\u015Brednictwem poczty e-mail (podstawa prawna: art. 6 ust. 1 lit. b) RODO);")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "wykonania ci\u0105\u017C\u0105cych na Administratorze obowi\u0105zk\xF3w prawnych i ksi\u0119gowych, np. wystawienie faktury, przechowywania dokumentacji ksi\u0119gowej, co stanowi uzasadniony interes Administratora (podstawa prawna: art. 6 ust. 1 lit. f RODO);")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "wewn\u0119trznych cel\xF3w Administratora takich jak, np. praca nad ulepszaniem obs\u0142ugi klienta, czy analiza finansowa stanowi\u0105ca realizacj\u0119 prawnie uzasadnionego interesu Administratora (podstawa prawna: art. 6 ust. 1 lit. f) RODO);")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "w celu oferowania przez Administratora us\u0142ug bezpo\u015Brednio (podstawa prawna: art. 6 ust. 1 lit. f RODO);\xA0\xA0")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "w celu ewentualnego dochodzenia lub obrony przed roszczeniami, a tak\u017Ce w celach archiwalnych prowadzonych na wypadek, wskazanej przepisami prawa, potrzeby wykazania okre\u015Blonych okoliczno\u015Bci, co stanowi realizacj\u0119 prawnie uzasadnionego interesu Administratora (podstawa prawna: art.6 ust.1 "), /*#__PURE__*/external_react_default.a.createElement("span", null, /*#__PURE__*/external_react_default.a.createElement("br", null)), /*#__PURE__*/external_react_default.a.createElement("span", null, "lit. f) RODO)."))), /*#__PURE__*/external_react_default.a.createElement("h2", null, "JAK D\u0141UGO B\u0118DZIEMY PRZECHOWYWA\u0106 DANE OSOBOWE?"), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "W zakresie danych zgromadzonych w celu reprezentacji Klienta w ramach wykonywania zawodu radcy prawnego, dane osobowe b\u0119d\u0105 przechowywane przez okres 10 lat od ko\u0144ca roku, w kt\xF3rym zako\u0144czy\u0142o si\u0119 post\u0119powanie, w kt\xF3rym dane osobowe zosta\u0142y zgromadzone.")), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "W zakresie zawarcia i realizacji umowy, ustalenia, dochodzenia lub obrony przed roszczeniami dane b\u0119d\u0105 przechowywane do czasu zako\u0144czenia jej realizacji, a po tym czasie przez okres wymagany przez przepisy prawa lub dla zabezpieczenia ewentualnych roszcze\u0144 (b\u0119dzie to co do zasady najd\u0142u\u017Cszy mo\u017Cliwy okres przedawnienia roszcze\u0144 plus jeden rok, kt\xF3ry to dodatkowy termin wynika z hipotetycznej mo\u017Cliwo\u015Bci zg\u0142oszenia roszczenia tu\u017C przed up\u0142ywem terminu przedawnienia).\xA0")), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "W zakresie danych przetwarzanych w celu wykonania obowi\u0105zk\xF3w prawnych dane osobowe b\u0119d\u0105 przechowywane przez czas, w kt\xF3rym przepisy nakazuj\u0105 Administratorowi przechowywa\u0107 dane, "), /*#__PURE__*/external_react_default.a.createElement("span", null, /*#__PURE__*/external_react_default.a.createElement("br", null)), /*#__PURE__*/external_react_default.a.createElement("span", null, "np. dokumentacja podatkowa musi by\u0107 przechowywana przez okres co najmniej 5 lat.")), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "W przypadku gdy nie dojdzie do zawarcia umowy w oparciu o przeprowadzone negocjacje, dane osobowe b\u0119d\u0105 przechowywane przez okres niezb\u0119dny dla zabezpieczenia ewentualnych roszcze\u0144.")), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "W zakresie wewn\u0119trznych cel\xF3w administracyjnych, a tak\u017Ce cel\xF3w archiwalnych, dane osobowe b\u0119d\u0105 przechowywane do czasu wype\u0142nienia prawnie uzasadnionych interes\xF3w Administratora stanowi\u0105cych podstaw\u0119 przetwarzania danych.")), /*#__PURE__*/external_react_default.a.createElement("h2", null, "KOMU PRZEKAZUJEMY DANE OSOBOWE?"), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "B\u0119dziemy przekazywa\u0107 dane osobowe podmiotom kt\xF3rym zlecimy us\u0142ugi zwi\u0105zane przetwarzaniem danych osobowych, np. biuro rachunkowe, firmy \u015Bwiadcz\u0105ce us\u0142ugi hostingowe. Takie podmioty przetwarzaj\u0105 dane na podstawie umowy z nami i tylko zgodnie z naszymi poleceniami.")), /*#__PURE__*/external_react_default.a.createElement("h2", null, "PRAWA ZWI\u0104ZANE Z PRZETWARZANIEM DANYCH OSOBOWYCH\xA0"), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "Przys\u0142uguj\u0105 Pani/Panu nast\u0119puj\u0105ce prawa zwi\u0105zane z przetwarzaniem danych osobowych:")), /*#__PURE__*/external_react_default.a.createElement("ol", null, /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "prawo dost\u0119pu do Pani/Pana danych osobowych;")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "prawo \u017C\u0105dania sprostowania Pani/Pana danych osobowych;")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "prawo \u017C\u0105dania usuni\u0119cia Pani/Pana danych osobowych;")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "prawo \u017C\u0105dania ograniczenia przetwarzania Pani/Pana danych osobowych;")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "prawo wyra\u017Cenia sprzeciwu wobec przetwarzania Pani/Pana danych;")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "prawo do przenoszenia Pani/Pana danych osobowych;\xA0")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "prawo wniesienia skargi do Prezesa Urz\u0119du Ochrony Danych Osobowych (wi\u0119cej informacji: https://uodo.gov.pl/)."))), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "Aby skorzysta\u0107 z powy\u017Cszych praw, skontaktuj si\u0119 z nami.\xA0")), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "Dane kontaktowe:")), /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "ul. Winiarska 56D/35, 60-654 Pozna\u0144")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "E-mail: kancelaria@dgprawo.pl")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    "aria-level": 1
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "M: 661 497\xA0118"))), /*#__PURE__*/external_react_default.a.createElement("p", null, /*#__PURE__*/external_react_default.a.createElement("span", null, "Jednocze\u015Bnie informujemy, i\u017C nie przetwarzamy danych osobowych w spos\xF3b zautomatyzowany, ani nie profilujemy Pani/Pana danych osobowych."))));
+});
+
+/***/ }),
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3295,61 +3223,67 @@ var _default = function _default(_ref) {
 exports["default"] = _default;
 
 /***/ }),
-/* 36 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 37 */
+/* 35 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-hamburger-menu");
+module.exports = require("react-cookie-consent");
 
 /***/ }),
-/* 38 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = require("aos");
 
 /***/ }),
-/* 39 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9Ijk3IiB2aWV3Qm94PSIwIDAgMTAwIDk3IiBmaWxsPSJub25lIgogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTM0Ljg1NDQgMjkuNjExNkw1Mi41NjMxIDQ2LjczNzlMNzMuNjY5OSAyNS4zMjA0TDY2LjMzMDEgMTguMjMzTDg0LjkxMjYgMTMuMjYyMUM3Ni4yMzMgNS4wNDg1NCA2NC41NDM3IDAgNTEuNjUwNSAwQzI0Ljk1MTUgMCAzLjMwMDk4IDIxLjY1MDUgMy4zMDA5OCA0OC4zNDk1QzMuMzAwOTggNTIuNzE4NCAzLjg4MzUgNTYuOTUxNCA0Ljk3MDg4IDYwLjk3MDlMMzQuODU0NCAyOS42MTE2WiIgZmlsbD0iI0YyRDZBOSIvPgogIDxwYXRoIGQ9Ik0xOC4wNTgyIDcwLjczNzhWODMuMTI2MUMxNiA4MS4xMjYxIDE0LjExNjUgNzguOTcwOCAxMi40MjcyIDc2LjY0MDdMMTguMDU4MiA3MC43Mzc4WiIgZmlsbD0iI0VBQTYzNiIvPgogIDxwYXRoIGQ9Ik0zMi40MjcyIDU1LjY4OTNWOTIuNzE4NEMyOC41MDQ4IDkxLjAwOTcgMjQuODU0NCA4OC44MTU1IDIxLjU1MzQgODYuMTc0N1Y2Ny4wNjc5TDMyLjQyNzIgNTUuNjg5M1oiIGZpbGw9IiNFQUE2MzYiLz4KICA8cGF0aCBkPSJNNDYuNzk2MSA2My4xMjYzVjk2LjQ0NjZDNDMuMDI5MSA5Ni4wNzc3IDM5LjM3ODYgOTUuMjYyMiAzNS45MjIzIDk0LjA3NzdWNTIuNjIxNEw0Ni43OTYxIDYzLjEyNjNaIiBmaWxsPSIjRUFBNjM2Ii8+CiAgPHBhdGggZD0iTTYxLjE2NSA2MS4yMDRWOTUuNzQ3N0M1OC4wOTcxIDk2LjM2OSA1NC45MTI2IDk2LjY3OTcgNTEuNjUwNSA5Ni42Nzk3QzUxLjIwMzkgOTYuNjc5NyA1MC43Mzc4IDk2LjY3OTcgNTAuMjkxMiA5Ni42NjAzVjY2LjUwNDlMNTMuMzAxIDY5LjQxNzZMNjEuMTY1IDYxLjIwNFoiIGZpbGw9IiNFQUE2MzYiLz4KICA8cGF0aCBkPSJNNzUuNTM0IDQ2LjIxMzZWOTAuMzg4M0M3Mi4xMzU5IDkyLjMzMDEgNjguNTA0OCA5My44NDQ2IDY0LjY2MDIgOTQuOTEyNlY1Ny41NzI4TDc1LjUzNCA0Ni4yMTM2WiIgZmlsbD0iI0VBQTYzNiIvPgogIDxwYXRoIGQ9Ik04OS45MDI5IDQxLjUzMzlWNzcuOTIyM0M4Ni44MzQ5IDgxLjg4MzQgODMuMTY1IDg1LjM1OTIgNzkuMDI5MSA4OC4xOTQxVjQyLjU2M0w4NC43NTczIDM2LjU4MjVMODkuOTAyOSA0MS41MzM5WiIgZmlsbD0iI0VBQTYzNiIvPgogIDxwYXRoIGQ9Ik0xMDAgNDguMzQ5NUMxMDAgNTcuMjQyNyA5Ny41OTIyIDY1LjU5MjIgOTMuMzk4IDcyLjc1NzNWMzYuMjMzTDk1LjU3MjggMjguMDk3MUM5OC40MDc4IDM0LjI3MTkgMTAwIDQxLjEyNjIgMTAwIDQ4LjM0OTVaIiBmaWxsPSIjRUFBNjM2Ii8+CiAgPHBhdGggZD0iTTk1LjcyODEgMTMuOTgwNkw3My4yMDM4IDIwTDc4LjY0MDcgMjUuMjQyN0w1Mi42MjEzIDUxLjY1MDVMMzQuOTUxNCAzNC41NjMxTDAgNzEuMjYyMUw2Ljc5NjExIDc3LjQ3NTdMMzUuNTM0IDQ3LjM3ODZMNTMuMjAzOSA2NC40NjZMODQuNjYwMiAzMS42NTA1TDg5LjcwODcgMzYuNTA0OUw5NS43MjgxIDEzLjk4MDZaIiBmaWxsPSIjRUFBNjM2Ii8+Cjwvc3ZnPgo="
 
 /***/ }),
-/* 40 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/icon_2.1236d128.svg";
 
 /***/ }),
-/* 41 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMyIgdmlld0JveD0iMCAwIDEwMCAxMDMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik05LjQyMzQzIDgwLjEwMDRDOS42MDcyOSA3Ny4zMDU3IDkuNzU0MzggNzQuODA1MSA5LjkzODI1IDcyLjMwNDZDMTAuMDQ4NiA3MS4wMTc1IDkuNjA3MjkgNzAuMDYxNCA4LjUwNDExIDY5LjM2MjdDNi4xODc0MyA2Ny43ODE1IDMuODcwNzUgNjYuMTYzNSAxLjU5MDg0IDY0LjUwODdDLTAuMTM3NDgyIDYzLjI1ODUgLTAuNDMxNjY0IDYyLjExODUgMC41OTc5NzIgNjAuMjQzMUMxLjkyMTc5IDU3Ljc0MjYgMy4zMTkxNSA1NS4zMTU2IDQuNzE2NTIgNTIuODUxOEM1LjM3ODQzIDUxLjcxMTggNS4zNzg0MyA1MC42ODIyIDQuNzE2NTIgNDkuNTc5QzMuMzU1OTMgNDcuMjYyMyAyLjA2ODg4IDQ0LjkwODkgMC43NDUwNjMgNDIuNTE4N0MtMC41MDUyMSA0MC4yNzU1IC0wLjIxMTAyOCAzOS4xNzIzIDEuODQ4MjUgMzcuNzAxNEMzLjk0NDI5IDM2LjIzMDUgNi4wNDAzNCAzNC42ODYxIDguMTczMTYgMzMuMjg4N0M5LjQ5Njk3IDMyLjQwNjIgMTAuMDQ4NiAzMS4zNzY1IDkuOTAxNDcgMjkuNzU4NUM5LjY0NDA2IDI3LjE0NzYgOS40OTY5NyAyNC41IDkuMzg2NjYgMjEuODg5MUM5LjI3NjM0IDE5LjM1MTggMTAuMDExOCAxOC40NjkzIDEyLjUxMjMgMTguMDY0OEMxNS4xNiAxNy42MjM1IDE3Ljg4MTIgMTcuNDAyOSAyMC40OTIgMTYuNzc3N0MyMS40NDgxIDE2LjU1NzEgMjIuNTUxMyAxNS42Mzc4IDIyLjk5MjYgMTQuNzU1MkMyNC4xMzI1IDEyLjQ3NTMgMjQuOTc4MyAxMC4wMTE2IDI1LjkzNDQgNy42MjEzM0MyNy4xMTExIDQuNzUzMDUgMjcuOTkzNyA0LjMxMTc4IDMxLjA0NTggNS4yNjc4N0MzMy4yNTIyIDUuOTY2NTUgMzUuNTMyMSA2LjU1NDkyIDM3LjcwMTcgNy4zMjcxNEMzOS4zOTMyIDcuOTUyMjggNDAuNzUzOCA3LjY1ODEgNDIuMDQwOCA2LjQwNzgzQzQzLjkxNjMgNC41NjkxOSA0NS45MDIgMi44MDQxIDQ3Ljg1MDkgMS4wMzkwMUM0OS40Njg5IC0wLjM1ODM1NyA1MC41NzIxIC0wLjM1ODM1NyA1Mi4xOTAxIDEuMTEyNTVDNTQuMTAyMyAyLjg0MDg3IDU1Ljk3NzcgNC41NjkxOSA1Ny44NTMxIDYuMzM0MjhDNTkuMTQwMiA3LjU0Nzc4IDYwLjUwMDcgNy45MTU1MSA2Mi4yMjkxIDcuMzI3MTRDNjQuNDcyMiA2LjU1NDkyIDY2Ljc4ODkgNS45Mjk3OCA2OS4wNjg4IDUuMjMxMUM3MS45NzM4IDQuMzQ4NTUgNzIuODE5NiA0Ljc1MzA1IDczLjk1OTYgNy42MjEzM0M3NC44Nzg5IDkuOTAxMjQgNzUuNzk4MiAxMi4xNDQ0IDc2LjY4MDcgMTQuNDYxMUM3Ny4yMzIzIDE1LjkzMiA3OC4xMTQ5IDE2Ljc0MSA3OS43Njk3IDE2LjkyNDhDODIuNDU0MSAxNy4yMTkgODUuMTAxNyAxNy42NjAzIDg3Ljc0OTMgMTguMTM4M0M5MC4xMDI4IDE4LjU0MjggOTAuNzY0NyAxOS4zODg2IDkwLjY1NDQgMjEuNzc4OEM5MC41MDczIDI0LjQyNjUgOTAuMzIzNCAyNy4wMzczIDkwLjA2NiAyOS42NDgyQzg5Ljg4MjIgMzEuMjI5NCA5MC4zNjAyIDMyLjMzMjYgOTEuNjg0IDMzLjI1MTlDOTMuOTI3MiAzNC43NTk2IDk2LjEzMzUgMzYuMzA0MSA5OC4zMDMxIDM3Ljg4NTNDMTAwLjEwNSAzOS4xNzIzIDEwMC4zNjIgNDAuMzEyMyA5OS4yOTYgNDIuMjk4Qzk4LjAwODkgNDQuNjUxNSA5Ni42ODUxIDQ3LjAwNDkgOTUuMzYxMyA0OS4zNTg0Qzk0LjYyNTggNTAuNjQ1NCA5NC41ODkxIDUxLjg1ODkgOTUuMzYxMyA1My4xODI3Qzk2LjcyMTkgNTUuNDk5NCA5OC4wNDU3IDU3Ljg1MjkgOTkuMzMyOCA2MC4yNDMxQzEwMC40MzYgNjIuMzAyNCAxMDAuMjE1IDYzLjI5NTIgOTguMzM5OSA2NC42MTkxQzk2LjEzMzUgNjYuMjAwMyA5My45NjM5IDY3Ljc0NDggOTEuNzIwOCA2OS4yNTI0QzkwLjM5NyA3MC4xMzUgODkuODgyMiA3MS4yMzgyIDkwLjA2NiA3Mi44MTk0QzkwLjM2MDIgNzUuNDMwMiA5MC41MDczIDc4LjA3NzkgOTAuNjU0NCA4MC42ODg3QzkwLjc2NDcgODIuOTMxOSA4OS45NTU3IDgzLjk2MTUgODcuNzEyNiA4NC4zNjZDODUuMDY0OSA4NC44MDczIDgyLjM4MDUgODUuMjQ4NiA3OS43MzI5IDg1LjU0MjhDNzguMTg4NCA4NS43MjY2IDc3LjMwNTkgODYuNDk4OCA3Ni43NTQzIDg3Ljg1OTRDNzUuNzk4MiA5MC4zMjMyIDc0LjgwNTMgOTIuNzUwMiA3My44MTI1IDk1LjE3NzJDNzIuODU2NCA5Ny41MzA3IDcxLjgyNjggOTguMDA4NyA2OS4zNjMgOTcuMjczM0M2Ni44MjU3IDk2LjUwMSA2NC4zMjUxIDk1Ljc2NTYgNjEuODI0NiA5NC45MTk4QzYwLjQ2NCA5NC40NDE4IDU5LjMyNCA5NC42OTkyIDU4LjI5NDQgOTUuNjkyQzU2LjMwODcgOTcuNTMwNyA1NC4zMjI5IDk5LjM2OTMgNTIuMzM3MiAxMDEuMTcxQzUwLjUzNTMgMTAyLjc4OSA0OS41MDU3IDEwMi44MjYgNDcuNzQwNiAxMDEuMjA4QzQ1Ljg2NTIgOTkuNTE2NCA0My45ODk4IDk3Ljg2MTYgNDIuMTg3OSA5Ni4wOTY1QzQwLjg2NDEgOTQuODA5NSAzOS40MyA5NC40Nzg1IDM3LjY2NDkgOTUuMDY2OUMzNS4zMTE0IDk1Ljg3NTkgMzIuODg0NCA5Ni41NzQ2IDMwLjQ5NDIgOTcuMzFDMjguMTQwNyA5OC4wMDg3IDI3LjA3NDMgOTcuNDkzOSAyNi4xNTUgOTUuMjUwN0MyNS4xMjU0IDkyLjcxMzQgMjQuMjQyOCA5MC4wNjU4IDIzLjAyOTMgODcuNjAyQzIyLjU4ODEgODYuNzE5NSAyMS40ODQ5IDg1Ljg3MzcgMjAuNTI4OCA4NS42MTYzQzE4LjIxMjEgODUuMDI3OSAxNS44MjE5IDg0LjgwNzMgMTMuNDY4NCA4NC40NzYzQzkuNzkxMTUgODMuOTk4MyA5LjI3NjM0IDgzLjQwOTkgOS40MjM0MyA4MC4xMDA0Wk04My4xODk1IDQ5Ljg3MzJDODIuNjAxMiAzMS4wNDU2IDY1Ljg2OTYgMTYuMjYyOSA0Ni41MjcxIDE4LjI0ODZDMjkuNzIyIDE5Ljk3NyAxNS4xNiAzNS4yNzQ0IDE3LjEwODkgNTQuODAwN0MxOC44MDA1IDcxLjYwNTkgMzQuMTM0NyA4Ni4yMDQ3IDUzLjYyNDIgODQuMjE4OUM3MC41MDI5IDgyLjQ1MzggODMuOTk4NSA2Ny41OTc3IDgzLjE4OTUgNDkuODczMloiIGZpbGw9IiNFQUE2MzYiLz4KPHBhdGggZD0iTTc3LjIzMjMgNTEuMTIzNEM3Ny4zNzk0IDY1Ljk0MjkgNjUuMjQ0NCA3OC4xODgyIDUwLjE2NzYgNzguNDA4OEMzNS4zODUgNzguNjI5NCAyMi44NDU1IDY2LjEyNjcgMjIuODQ1NSA1MS4xOTdDMjIuODQ1NSAzNi4zMDQgMzUuMDkwOCAyNC4wNTg3IDUwLjAyMDUgMjQuMDIxOUM2NC44Mzk5IDIzLjk0ODQgNzcuMDg1MiAzNi4xNTY5IDc3LjIzMjMgNTEuMTIzNFpNNzAuNDI5NCA0Ni4zMDYyQzcwLjQyOTQgNDQuNTA0NCA2OS41ODM2IDQzLjY1ODYgNjcuODkyMSA0My40NzQ3QzY0LjY1NjEgNDMuMTgwNSA2MS40MiA0Mi44NDk2IDU4LjE4NCA0Mi43MDI1QzU2Ljg5NyA0Mi42Mjg5IDU2LjQxOSA0Mi4wNzc0IDU2LjAxNDUgNDEuMDEwOUM1NC45MTEzIDM4LjE0MjcgNTMuODA4MSAzNS4zMTEyIDUyLjQ4NDMgMzIuNTUzMkM1Mi4wNzk4IDMxLjcwNzQgNTEuMDEzNCAzMC44MjQ5IDUwLjEzMDggMzAuNjQxQzQ4Ljg4MDYgMzAuMzQ2OCA0OC4xMDgzIDMxLjM3NjUgNDcuNjMwMyAzMi41OUM0Ni40NTM1IDM1LjUzMTggNDUuMjc2OCAzOC41MTA0IDQzLjk4OTggNDEuNDE1NEM0My43MzI0IDQxLjk2NyA0Mi45MjM0IDQyLjU1NTQgNDIuMzM1IDQyLjYyODlDMzkuMTcyNSA0Mi45NTk5IDM1Ljk3MzMgNDIuOTk2NyAzMi44MTA5IDQzLjQwMTJDMzEuODU0OCA0My41MTE1IDMwLjY3ODEgNDQuMzIwNSAzMC4xMjY1IDQ1LjEyOTVDMjkuNDY0NiA0Ni4xNTkxIDMwLjIzNjggNDcuMTg4OCAzMS4xNTYxIDQ3LjkyNDJDMzMuNDcyOCA0OS44MzY0IDM1LjY3OTEgNTEuODU4OSAzOC4wNjk0IDUzLjY2MDhDMzkuMjgyOSA1NC41ODAxIDM5LjM5MzIgNTUuNDYyNiAzOS4wMjU1IDU2Ljc0OTdDMzguMjUzMiA1OS41ODEyIDM3LjY2NDkgNjIuNDQ5NCAzNi44OTI2IDY1LjI4MDlDMzYuNTI0OSA2Ni41NjggMzYuNTI0OSA2Ny43NDQ3IDM3LjcwMTYgNjguNTUzN0MzOC44NDE2IDY5LjM2MjcgMzkuOTA4IDY4LjkyMTUgNDAuOTM3NiA2OC4yNTk1QzQzLjU4NTMgNjYuNjA0OCA0Ni4yNjk3IDY1LjAyMzUgNDguOTE3MyA2My4zMzJDNDkuNzYzMSA2Mi43ODA0IDUwLjM1MTUgNjIuODE3MiA1MS4xOTcyIDYzLjM2ODhDNTMuODA4MSA2NS4wNjAzIDU2LjQ5MjUgNjYuNjc4MyA1OS4xNDAxIDY4LjMzMzFDNjAuMjgwMSA2OS4wMzE4IDYxLjM4MzMgNjkuNjU2OSA2Mi42NzAzIDY4LjczNzZDNjQuMDMwOSA2Ny43ODE1IDYzLjU4OTYgNjYuNDU3NyA2My4yOTU1IDY1LjIwNzRDNjIuNjMzNSA2Mi40MTI3IDYyLjAwODQgNTkuNjE3OSA2MS4yMzYyIDU2LjgyMzJDNjAuOTA1MiA1NS42MDk3IDYxLjA1MjMgNTQuODc0MyA2Mi4xMTg3IDU0LjAyODVDNjQuNTA5IDUyLjE1MzEgNjYuODI1NiA1MC4xMzA2IDY5LjEwNTUgNDguMDcxM0M2OS43Njc1IDQ3LjU1NjUgNzAuMTM1MiA0Ni43MTA3IDcwLjQyOTQgNDYuMzA2MloiIGZpbGw9IiNGMkQ2QTkiLz4KPHBhdGggZD0iTTcwLjQyOTQgNDYuMzA2MkM3MC40Mjk0IDQ0LjUwNDQgNjkuNTgzNiA0My42NTg2IDY3Ljg5MjEgNDMuNDc0N0M2NC42NTYxIDQzLjE4MDUgNjEuNDIwMSA0Mi44NDk2IDU4LjE4NDEgNDIuNzAyNUM1Ni44OTcgNDIuNjI5IDU2LjQxOSA0Mi4wNzc0IDU2LjAxNDUgNDEuMDExQzU0LjkxMTMgMzguMTQyNyA1My44MDgxIDM1LjMxMTIgNTIuNDg0MyAzMi41NTMyQzUyLjA3OTggMzEuNzA3NSA1MS4wMTM0IDMwLjgyNDkgNTAuMTMwOCAzMC42NDExQzQ4Ljg4MDYgMzAuMzQ2OSA0OC4xMDgzIDMxLjM3NjUgNDcuNjMwMyAzMi41OUM0Ni40NTM2IDM1LjUzMTggNDUuMjc2OCAzOC41MTA0IDQzLjk4OTggNDEuNDE1NUM0My43MzI0IDQxLjk2NyA0Mi45MjM0IDQyLjU1NTQgNDIuMzM1IDQyLjYyOUMzOS4xNzI2IDQyLjk1OTkgMzUuOTczMyA0Mi45OTY3IDMyLjgxMDkgNDMuNDAxMkMzMS44NTQ4IDQzLjUxMTUgMzAuNjc4MSA0NC4zMjA1IDMwLjEyNjUgNDUuMTI5NUMyOS40NjQ2IDQ2LjE1OTEgMzAuMjM2OCA0Ny4xODg4IDMxLjE1NjEgNDcuOTI0MkMzMy40NzI4IDQ5LjgzNjQgMzUuNjc5MiA1MS44NTg5IDM4LjA2OTQgNTMuNjYwOEMzOS4yODI5IDU0LjU4MDEgMzkuMzkzMiA1NS40NjI2IDM5LjAyNTUgNTYuNzQ5N0MzOC4yNTMyIDU5LjU4MTIgMzcuNjY0OSA2Mi40NDk1IDM2Ljg5MjcgNjUuMjgxQzM2LjUyNDkgNjYuNTY4IDM2LjUyNDkgNjcuNzQ0NyAzNy43MDE3IDY4LjU1MzdDMzguODQxNiA2OS4zNjI3IDM5LjkwOCA2OC45MjE1IDQwLjkzNzcgNjguMjU5NUM0My41ODUzIDY2LjYwNDggNDYuMjY5NyA2NS4wMjM1IDQ4LjkxNzMgNjMuMzMyQzQ5Ljc2MzEgNjIuNzgwNCA1MC4zNTE1IDYyLjgxNzIgNTEuMTk3MiA2My4zNjg4QzUzLjgwODEgNjUuMDYwMyA1Ni40OTI1IDY2LjY3ODMgNTkuMTQwMiA2OC4zMzMxQzYwLjI4MDEgNjkuMDMxOCA2MS4zODMzIDY5LjY1NjkgNjIuNjcwMyA2OC43Mzc2QzY0LjAzMDkgNjcuNzgxNSA2My41ODk3IDY2LjQ1NzcgNjMuMjk1NSA2NS4yMDc0QzYyLjYzMzYgNjIuNDEyNyA2Mi4wMDg0IDU5LjYxOCA2MS4yMzYyIDU2LjgyMzJDNjAuOTA1MiA1NS42MDk3IDYxLjA1MjMgNTQuODc0MyA2Mi4xMTg3IDU0LjAyODVDNjQuNTA5IDUyLjE1MzEgNjYuODI1NyA1MC4xMzA2IDY5LjEwNTYgNDguMDcxM0M2OS43Njc1IDQ3LjU1NjUgNzAuMTM1MiA0Ni43MTA3IDcwLjQyOTQgNDYuMzA2MloiIGZpbGw9IiNFQUE2MzYiLz4KPC9zdmc+Cg=="
 
 /***/ }),
-/* 42 */
+/* 40 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-hamburger-menu");
+
+/***/ }),
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(43);
-__webpack_require__(45);
-module.exports = __webpack_require__(52);
+__webpack_require__(42);
+__webpack_require__(44);
+module.exports = __webpack_require__(51);
 
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(44)["default"];
+var plugins = __webpack_require__(43)["default"];
 
-var _require = __webpack_require__(25),
+var _require = __webpack_require__(24),
     registerPlugins = _require.registerPlugins;
 
 registerPlugins(plugins);
@@ -3357,12 +3291,12 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(35);
+/* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(33);
 /* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
  // Plugins
@@ -3392,17 +3326,17 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var _require = __webpack_require__(25),
+var _require = __webpack_require__(24),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(46),
+var _require2 = __webpack_require__(45),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -3411,22 +3345,20 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "notFoundTemplate", function() { return notFoundTemplate; });
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
+/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_universal_component__WEBPACK_IMPORTED_MODULE_3__);
-
-
 
 
 
@@ -3449,7 +3381,7 @@ var universalOptions = {
 var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/404.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/404 */).then(__webpack_require__.bind(null, 31))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/404 */).then(__webpack_require__.bind(null, 30))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -3457,7 +3389,7 @@ var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/404.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(31);
+    return /*require.resolve*/(30);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/404";
@@ -3465,27 +3397,9 @@ var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
 }), universalOptions);
 t_0.template = '__react_static_root__/src/pages/404.js';
 var t_1 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
-  id: "__react_static_root__/src/pages/cookies.js",
-  load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/cookies */).then(__webpack_require__.bind(null, 32))]).then(function (proms) {
-      return proms[0];
-    });
-  },
-  path: function path() {
-    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/cookies.js');
-  },
-  resolve: function resolve() {
-    return /*require.resolve*/(32);
-  },
-  chunkName: function chunkName() {
-    return "__react_static_root__/src/pages/cookies";
-  }
-}), universalOptions);
-t_1.template = '__react_static_root__/src/pages/cookies.js';
-var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/index */).then(__webpack_require__.bind(null, 34))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/index */).then(__webpack_require__.bind(null, 31))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -3493,17 +3407,17 @@ var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(34);
+    return /*require.resolve*/(31);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/index";
   }
 }), universalOptions);
-t_2.template = '__react_static_root__/src/pages/index.js';
-var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+t_1.template = '__react_static_root__/src/pages/index.js';
+var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/rodo.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/rodo */).then(__webpack_require__.bind(null, 33))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/rodo */).then(__webpack_require__.bind(null, 32))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -3511,26 +3425,25 @@ var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/rodo.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(33);
+    return /*require.resolve*/(32);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/rodo";
   }
 }), universalOptions);
-t_3.template = '__react_static_root__/src/pages/rodo.js'; // Template Map
+t_2.template = '__react_static_root__/src/pages/rodo.js'; // Template Map
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   '__react_static_root__/src/pages/404.js': t_0,
-  '__react_static_root__/src/pages/cookies.js': t_1,
-  '__react_static_root__/src/pages/index.js': t_2,
-  '__react_static_root__/src/pages/rodo.js': t_3
+  '__react_static_root__/src/pages/index.js': t_1,
+  '__react_static_root__/src/pages/rodo.js': t_2
 }); // Not Found Template
 
 var notFoundTemplate = "__react_static_root__/src/pages/404.js";
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -3559,7 +3472,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3586,7 +3499,7 @@ var _extends = Object.assign || function (target) {
 
 exports["default"] = requireUniversalModule;
 
-var _utils = __webpack_require__(20);
+var _utils = __webpack_require__(19);
 
 var CHUNK_NAMES = exports.CHUNK_NAMES = new Set();
 var MODULE_IDS = exports.MODULE_IDS = new Set();
@@ -3770,7 +3683,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -3798,16 +3711,16 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 49;
+webpackContext.id = 48;
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof = __webpack_require__(19);
+var _typeof = __webpack_require__(18);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3835,11 +3748,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(26);
+var _propTypes = __webpack_require__(25);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _context = __webpack_require__(27);
+var _context = __webpack_require__(26);
 
 var _context2 = _interopRequireDefault(_context);
 
@@ -3911,7 +3824,7 @@ ReportChunks.propTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3922,7 +3835,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.__handleAfter = exports.__update = undefined;
 
-var _hoistNonReactStatics = __webpack_require__(28);
+var _hoistNonReactStatics = __webpack_require__(27);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -3978,15 +3891,15 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(29);
+var _interopRequireDefault = __webpack_require__(28);
 
-var _interopRequireWildcard = __webpack_require__(30);
+var _interopRequireWildcard = __webpack_require__(29);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3995,9 +3908,9 @@ exports["default"] = void 0;
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(53);
+var _useStaticInfo = __webpack_require__(52);
 
-var _Suspense = _interopRequireDefault(__webpack_require__(54));
+var _Suspense = _interopRequireDefault(__webpack_require__(53));
 /* eslint-disable import/no-dynamic-require */
 // Override the suspense module to be our own
 // This is expected to break when using preact
@@ -4008,7 +3921,7 @@ var _Suspense = _interopRequireDefault(__webpack_require__(54));
 React.Suspense = _Suspense["default"];
 React["default"].Suspense = _Suspense["default"];
 
-var App = __webpack_require__(55)["default"];
+var App = __webpack_require__(54)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -4021,30 +3934,30 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports) {
 
 module.exports = require("D:\\Frontend\\dgprawo_react\\node_modules\\react-static\\lib\\browser\\hooks\\useStaticInfo");
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(30);
+var _interopRequireWildcard = __webpack_require__(29);
 
-var _interopRequireDefault = __webpack_require__(29);
+var _interopRequireDefault = __webpack_require__(28);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(7));
+var _extends2 = _interopRequireDefault(__webpack_require__(5));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(21));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(20));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
@@ -4065,18 +3978,18 @@ var _default = Suspense;
 exports["default"] = _default;
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(36);
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(17);
 
 
  // Your top level component
@@ -4102,10 +4015,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(56)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(55)(module)))
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -4135,17 +4048,17 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 57 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(58)(false);
+exports = module.exports = __webpack_require__(57)(false);
 // Module
 exports.push([module.i, "\nhtml {\n  scroll-behavior: smooth;\n\n}\n\nbody {\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 300;\n  font-size: 18px;\n  margin: 0;\n  padding: 0;\n  overflow-x: hidden;\n}\n\na {\n  text-decoration: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\n.ReactCollapse--collapse {\n  transition: height 500ms;\n}\n", ""]);
 
 
 
 /***/ }),
-/* 58 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4236,7 +4149,7 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, exports) {
 
 module.exports = require("aos/dist/aos.css");

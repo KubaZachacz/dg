@@ -72,7 +72,7 @@ const Offers = () => {
         </Paragraph>
         <List>
           {mainList.map((item, id) =>
-            <Item key={`item-${id}`}><img src={'./arrow.svg'} /> <span>{item}</span></Item>
+            <Item key={`item-${id}`}><img src={'./arrow.svg'} alt=""/> <span>{item}</span></Item>
           )}
         </List>
         <MobileOffersImage />
